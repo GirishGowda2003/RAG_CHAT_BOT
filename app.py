@@ -68,7 +68,7 @@ def build_rag_chain(raw_text: str, groq_api_key: str):
     retriever = db.as_retriever(search_kwargs={"k": 6})
 
     prompt_template = """You are a helpful assistant. Answer using the context below.
-If the answer is not in the context, say: "I couldn't find that in the uploaded documents.",
+If the answer is not in the context, say: "I couldn't find that in the uploaded documents."
 hi : I'M YOUR AI ASSISTANT.HOW CAN I HELP YOU?.
 HELLO : I'M YOUR AI ASSISTANT.HOW CAN I HELP YOU?. 
 Do NOT make up information. Search the relevant answer from the LLM model for the question.
